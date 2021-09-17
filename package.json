@@ -1,5 +1,5 @@
 {
-  "name": "jsencrypt",
+  "name": "@limm/jsencrypt-mp",
   "version": "3.2.1",
   "description": "A Javascript library to perform OpenSSL RSA Encryption, Decryption, and Key Generation.",
   "main": "bin/jsencrypt.js",
