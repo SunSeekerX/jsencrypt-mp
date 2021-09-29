@@ -12,7 +12,7 @@
 - document
 - navigator
 
-
+module 编译类型输出目标改为 `ES2015`，方便项目打包，去除 rollup 打包时出现的 this 警告
 
 ### `src/lib/jsbn/rng.ts`
 
@@ -146,5 +146,41 @@ BigInteger.prototype.am = function am3(i:number, x:number, w:BigInteger, j:numbe
     return c;
 };
 dbits = 28;
+```
+
+### `tsconfig-def.json`
+
+```json
+{
+  "compilerOptions": {
+    "target": "es5",
+}
+```
+
+修改后
+
+```json
+{
+  "compilerOptions": {
+    "target": "ES2015",
+}
+```
+
+### `tsconfig.json`
+
+```json
+{
+  "compilerOptions": {
+    "target": "es5",
+}
+```
+
+修改后
+
+```json
+{
+  "compilerOptions": {
+    "target": "ES2015",
+}
 ```
 
